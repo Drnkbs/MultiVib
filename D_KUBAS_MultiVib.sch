@@ -1,0 +1,240 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:2n4401
+LIBS:D_KUBAS_MultiVib-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "D_KUBAS_multiVib_homework"
+Date "2017-03-15"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D1
+U 1 1 58C9E19E
+P 3250 2150
+F 0 "D1" H 3250 2250 50  0000 C CNN
+F 1 "LED" H 3250 2050 50  0000 C CNN
+F 2 "" H 3250 2150 50  0000 C CNN
+F 3 "" H 3250 2150 50  0000 C CNN
+	1    3250 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 58C9E307
+P 7200 2150
+F 0 "D2" H 7200 2250 50  0000 C CNN
+F 1 "LED" H 7200 2050 50  0000 C CNN
+F 2 "" H 7200 2150 50  0000 C CNN
+F 3 "" H 7200 2150 50  0000 C CNN
+	1    7200 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 58C9E43E
+P 3250 3400
+F 0 "R1" V 3330 3400 50  0000 C CNN
+F 1 "470R" V 3250 3400 50  0000 C CNN
+F 2 "" V 3180 3400 50  0000 C CNN
+F 3 "" H 3250 3400 50  0000 C CNN
+	1    3250 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 58C9E553
+P 4500 3400
+F 0 "R2" V 4580 3400 50  0000 C CNN
+F 1 "47K" V 4500 3400 50  0000 C CNN
+F 2 "" V 4430 3400 50  0000 C CNN
+F 3 "" H 4500 3400 50  0000 C CNN
+	1    4500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 58C9E658
+P 5800 3350
+F 0 "R3" V 5880 3350 50  0000 C CNN
+F 1 "47K" V 5800 3350 50  0000 C CNN
+F 2 "" V 5730 3350 50  0000 C CNN
+F 3 "" H 5800 3350 50  0000 C CNN
+	1    5800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 58C9E6FD
+P 7200 3350
+F 0 "R4" V 7280 3350 50  0000 C CNN
+F 1 "470R" V 7200 3350 50  0000 C CNN
+F 2 "" V 7130 3350 50  0000 C CNN
+F 3 "" H 7200 3350 50  0000 C CNN
+	1    7200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 58C9E864
+P 1700 3650
+F 0 "BT1" H 1800 3750 50  0000 L CNN
+F 1 "9V" H 1800 3650 50  0000 L CNN
+F 2 "" V 1700 3710 50  0000 C CNN
+F 3 "" V 1700 3710 50  0000 C CNN
+	1    1700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 58C9E8F5
+P 4050 4300
+F 0 "C1" H 4075 4400 50  0000 L CNN
+F 1 "47uF" H 4075 4200 50  0000 L CNN
+F 2 "" H 4050 4300 50  0000 C CNN
+F 3 "" H 4050 4300 50  0000 C CNN
+	1    4050 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 58C9E96E
+P 6250 4300
+F 0 "C2" H 6275 4400 50  0000 L CNN
+F 1 "47uF" H 6275 4200 50  0000 L CNN
+F 2 "" H 6250 4300 50  0000 C CNN
+F 3 "" H 6250 4300 50  0000 C CNN
+	1    6250 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 3450 1700 1800
+Wire Wire Line
+	1700 1800 7200 1800
+Wire Wire Line
+	3250 1800 3250 2000
+Wire Wire Line
+	1700 3850 1700 5700
+Wire Wire Line
+	3250 2300 3250 3250
+Connection ~ 3250 5700
+Wire Wire Line
+	7200 1800 7200 2000
+Connection ~ 3250 1800
+Wire Wire Line
+	7200 2300 7200 3200
+Wire Wire Line
+	7200 3500 7200 5000
+Wire Wire Line
+	6400 4300 7200 4300
+Connection ~ 7200 4300
+Wire Wire Line
+	5800 3200 5800 1800
+Connection ~ 5800 1800
+Wire Wire Line
+	5800 3500 5800 5100
+Wire Wire Line
+	5800 4300 6100 4300
+Connection ~ 5800 4300
+Wire Wire Line
+	4500 3250 4500 1800
+Connection ~ 4500 1800
+Wire Wire Line
+	3900 4300 3250 4300
+Connection ~ 3250 4300
+Wire Wire Line
+	4200 4300 4500 4300
+Wire Wire Line
+	4500 3550 4500 4800
+Wire Wire Line
+	6050 5050 6050 4800
+Wire Wire Line
+	6050 4800 4500 4800
+Connection ~ 4500 4300
+$Comp
+L 2N4401 UT?
+U 1 1 58D8548E
+P 6900 5000
+F 0 "UT?" H 7450 5250 60  0000 C CNN
+F 1 "2N4401" H 6600 5200 60  0000 C CNN
+F 2 "" H 7200 5200 60  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/661741.pdf" H 7200 5200 60  0001 C CNN
+	1    6900 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5050 6050 5050
+Wire Wire Line
+	6600 4950 6200 4950
+Wire Wire Line
+	6200 4950 6200 5700
+Wire Wire Line
+	6200 5700 1700 5700
+$Comp
+L 2N4401 UT?
+U 1 1 58D85997
+P 3550 5000
+F 0 "UT?" H 3850 5200 60  0000 C CNN
+F 1 "2N4401" H 3250 5200 60  0000 C CNN
+F 2 "" H 3850 5200 60  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/661741.pdf" H 3850 5200 60  0001 C CNN
+	1    3550 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 4950 3850 4900
+Wire Wire Line
+	3850 4900 4050 4900
+Wire Wire Line
+	4050 4900 4050 4950
+Wire Wire Line
+	4050 4950 5650 4950
+Wire Wire Line
+	5650 4950 5650 5100
+Wire Wire Line
+	5650 5100 5800 5100
+Wire Wire Line
+	3850 5050 3850 5150
+Wire Wire Line
+	3850 5150 3250 5150
+Wire Wire Line
+	3250 5150 3250 5700
+Wire Wire Line
+	3250 3500 3250 5000
+$EndSCHEMATC
